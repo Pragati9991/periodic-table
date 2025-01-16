@@ -1,0 +1,22 @@
+/* Header
+============================== */
+.header {
+  background-color: #111111;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 100;
+}
+
+.header__inner {}
+
+.header__logo {
+  width: 320px;
+}
+  
+.header__logo a {
+  text-decoration: none;
+}
+  

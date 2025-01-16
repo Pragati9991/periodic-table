@@ -1,0 +1,341 @@
+body {
+  --scale: 1.3;
+  /* font-family: system-ui, sans-serif; */
+  font-family: "Roboto", sans-serif;
+  background-color: #000;
+}
+
+
+/* TablePeriodic
+============================== */
+.tablePeriodicWrap {
+  width: 90%;
+  margin: 100px auto 0;
+}
+
+fieldset {
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.6);
+  display: grid;
+  font-size: small;
+  gap: 0.5ch;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-inline-size: 70ch;
+  margin: 2em auto;
+  padding: 1ch;
+}
+
+ol {
+  all: unset;
+  container-type: inline-size;
+  counter-reset: element;
+  display: grid;
+  font-size: 2cqi;
+  gap: .1em;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+}
+
+ol abbr {
+  display: grid;
+  font-weight: 500;
+  grid-area: 2 / 1 / 4 / 3;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+ol abbr::after {
+  content: attr(title);
+  display: block;
+  font-size: 0.33em;
+  font-weight: 400;
+  place-self: end center;
+}
+
+ol li {
+  aspect-ratio: 2 / 2.5;
+  /* aspect-ratio: 1 / 1; */
+  background: #eee;
+  counter-increment: element;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0.25ch;
+  transition: scale 0.125s ease-in;
+  color: #fff;
+  border: .3px solid #d1d5db33;
+
+  transition: border .25s, box-shadow .25s;
+}
+
+ol li::before {
+  content: counter(element);
+  font-size: 0.33em;
+}
+
+
+ol li.blackSpace {
+  color: lightblue;
+  background: #000;
+  border: none;
+  padding: 0;
+  overflow: visible;
+  position: relative;
+}
+
+ol li.blackSpace::before {
+  width: 100%;
+  height: 400%;
+  clip-path: polygon(0 0, 101% 78%, 100% 102%, 0 25%);
+  position: absolute;
+  z-index: 1;
+}
+
+ol li.blackSpace.-line01::before {
+  background: linear-gradient(110deg, rgba(0, 255, 255, 0.25), rgba(0, 255, 255, 0.35));
+}
+
+ol li.blackSpace.-line02::before {
+  background: linear-gradient(110deg,  rgba(64, 255, 192, 0.25), rgba(64, 255, 192, 0.35));
+}
+
+ol li::after {
+  content: attr(data-mass);
+  grid-area: 1 / 2 / 2 / 2;
+  justify-self: end;
+  font-size: 0.33em;
+}
+
+@media (hover: hover) {
+  ol li:hover {
+    cursor: pointer;
+  }
+
+  ol li.nbl:hover {
+    border: .3px solid rgba(255, 152, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(255, 152, 0, 0.8);
+  }
+
+  ol li.rnm:hover,
+  ol li.hln:hover {
+    border: .3px solid rgba(255, 255, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(255, 255, 0, 0.8);
+  }
+
+  ol li.met:hover {
+    border: .3px solid rgba(140, 190, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(140, 190, 0, 0.8);
+  }
+
+  ol li.trm:hover {
+    border: .3px solid rgba(0, 255, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 255, 0, 0.8);
+  }
+  
+  ol li.trn:hover {
+    border: .3px solid rgba(0, 128, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(0, 128, 255, 0.8);
+  }
+
+  ol li.aec:hover {
+    border: .3px solid rgba(64, 64, 255, 0.8);
+    box-shadow: 0 4px 10px rgba(64, 64, 255, 0.8);
+  }
+
+  ol li.alk:hover {
+    border: .3px solid rgba(255, 0, 0, 0.8);
+    box-shadow: 0 4px 10px rgba(255, 0, 0, 0.8);
+  }
+  
+  ol li.act:hover {
+    border: .3px solid rgba(64, 255, 192, 0.8);
+    box-shadow: 0 4px 10px rgba(64, 255, 192, 0.8);
+  }
+
+  ol li.lan:hover {
+      border: .3px solid rgba(0, 255, 255, 0.8);
+      box-shadow: 0 4px 10px rgba(0, 255, 255, 0.8);
+  }
+  
+}
+
+ol li.blackSpace:hover {
+  opacity: 1;
+  cursor: initial;
+}
+
+/* Layout */
+ol li:nth-of-type(2) { grid-column: 18; }
+ol li:nth-of-type(5), ol li:nth-of-type(13) { grid-column: 13; }
+
+/* Lanthenides */
+ol li:nth-of-type(58) { grid-area: 9 / 5 / 9 / 5; }
+ol li:nth-of-type(59) { grid-area: 9 / 6 / 9 / 6; }
+ol li:nth-of-type(60) { grid-area: 9 / 7 / 9 / 7; }
+ol li:nth-of-type(61) { grid-area: 9 / 8 / 9 / 8; }
+ol li:nth-of-type(62) { grid-area: 9 / 9 / 9 / 9; }
+ol li:nth-of-type(63) { grid-area: 9 / 10 / 9 / 10; }
+ol li:nth-of-type(64) { grid-area: 9 / 11 / 9 / 11; }
+ol li:nth-of-type(65) { grid-area: 9 / 12 / 9 / 12; }
+ol li:nth-of-type(66) { grid-area: 9 / 13 / 9 / 13; }
+ol li:nth-of-type(67) { grid-area: 9 / 14 / 9 / 14; }
+ol li:nth-of-type(68) { grid-area: 9 / 15 / 9 / 15; }
+ol li:nth-of-type(69) { grid-area: 9 / 16 / 9 / 16; }
+ol li:nth-of-type(70) { grid-area: 9 / 17 / 9 / 17; }
+ol li:nth-of-type(71) { grid-area: 9 / 18 / 9 / 18; }
+
+/* Actinides */
+ol li:nth-of-type(90) { grid-area: 10 / 5 / 10 / 5; }
+ol li:nth-of-type(91) { grid-area: 10 / 6 / 10 / 6; }
+ol li:nth-of-type(92) { grid-area: 10 / 7 / 10 / 7; }
+ol li:nth-of-type(93) { grid-area: 10 / 8 / 10 / 8; }
+ol li:nth-of-type(94) { grid-area: 10 / 9 / 10 / 9; }
+ol li:nth-of-type(95) { grid-area: 10 / 10 / 10 / 10; }
+ol li:nth-of-type(96) { grid-area: 10 / 11 / 10 / 11; }
+ol li:nth-of-type(97) { grid-area: 10 / 12 / 10 / 12; }
+ol li:nth-of-type(98) { grid-area: 10 / 13 / 10 / 13; }
+ol li:nth-of-type(99) { grid-area: 10 / 14 / 10 / 14; }
+ol li:nth-of-type(100) { grid-area: 10 / 15 / 10 / 15; }
+ol li:nth-of-type(101) { grid-area: 10 / 16 / 10 / 16; }
+ol li:nth-of-type(102) { grid-area: 10 / 17 / 10 / 17; }
+ol li:nth-of-type(103) { grid-area: 10 / 18 / 10 / 18; }
+
+/* Additional Code */
+ol li:nth-of-type(57) { grid-area: 9 / 4 / 9 / 4; }
+ol li:nth-of-type(89) { grid-area: 10 / 4 / 10 / 4; }
+ol li:nth-of-type(119) { grid-area: 6 / 4 / 6 / 3; } /* space */
+ol li:nth-of-type(120) { grid-area: 7 / 4 / 7 / 3; } /* space */
+
+/* Filter */
+body:has(#alk:checked) li:not(.alk),
+body:has(#aec:checked) li:not(.aec),
+body:has(#trn:checked) li:not(.trn),
+body:has(#trm:checked) li:not(.trm),
+body:has(#met:checked) li:not(.met),
+body:has(#rnm:checked) li:not(.rnm),
+body:has(#hln:checked) li:not(.hln),
+body:has(#nbl:checked) li:not(.nbl),
+body:has(#lan:checked) li:not(.lan),
+body:has(#act:checked) li:not(.act) {
+  opacity: 0.2;
+}
+
+/* Heisenberg Mode */
+body:has(#brb:checked) {
+  background: radial-gradient(circle, hsl(90, 67%, 22%) 10%, hsl(84, 71%, 7%) 40%, hsl(90, 100%, 8%) 100%);
+  background-size: cover;
+  color: #ffffff;
+}
+
+body:has(#brb:checked) li:not(:nth-of-type(35), :nth-of-type(56)) {
+  --scale: 1;
+  background-color: hsla(113, 40%, 4%, 0.5);
+  color: hsla(120, 6%, 26%, 0.85);
+}
+
+body:has(#brb:checked) li:nth-of-type(35),
+body:has(#brb:checked) li:nth-of-type(56) {
+  background: linear-gradient(135deg, #3e8467, #101f15);
+  transform: scale(var(--scale));
+}
+
+/* Alkali Metals */
+.alk {
+  background: linear-gradient(110deg, rgba(255, 0, 0, 0.2), rgba(255, 0, 0, 0.25));
+
+  /* background-color: #ff6666; */
+}
+
+/* Alkaline Earth Metals */
+.aec {
+  background: linear-gradient(110deg, rgba(64, 64, 255, 0.2), rgba(64, 64, 255, 0.25));
+
+  /* background-color: #ffdead; */
+}
+
+/* Transition Metals */
+.trn {
+  background: linear-gradient(110deg, rgba(0, 128, 255, 0.2), rgba(0, 128, 255, 0.3));
+  
+  /* background-color: #add8e6; */
+}
+
+/* Post-Transition Metals */
+.trm {
+  background: linear-gradient(110deg, rgba(0, 255, 0, 0.2), rgba(0, 255, 0, 0.3));
+
+  /* background-color: #cccccc; */
+}
+
+/* Metalloids (Semimetals) */
+.met {
+  background: linear-gradient(110deg, rgba(140, 190, 0, 0.2), rgba(140, 190, 0, 0.3));
+
+  /* background-color: #cccc99; */
+}
+
+/* Reactive Non-Metals */
+.rnm {
+  /* background-color: #99ff99; */
+  background: linear-gradient(110deg, rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.3));
+  /* background-color: #004545; */
+}
+
+/* Halogens */
+.hln {
+  background: linear-gradient(110deg, rgba(255, 255, 0, 0.2), rgba(255, 255, 0, 0.3));
+
+
+  /* background-color: #ffff99; */
+}
+
+/* Noble Gases */
+.nbl {
+  background: linear-gradient(110deg, rgba(255, 152, 0, 0.2), rgba(255, 152, 0, 0.3));
+  
+  /* background-color: #ffb3e6; */
+}
+
+/* Lanthanides */
+.lan {
+  background: linear-gradient(110deg, rgba(0, 255, 255, 0.25), rgba(0, 255, 255, 0.35));
+  
+  /* background-color: #ffb366; */
+}
+
+/* Actinides */
+.act {
+  background: linear-gradient(110deg,  rgba(64, 255, 192, 0.25), rgba(64, 255, 192, 0.35));
+  /* background-color: #ff99cc; */
+}
+
+
+/* ==============================
+  SP
+============================== */
+@media screen and (max-width: 768px)  {
+	/* 480px以下に適用されるCSS（スマホ用） */
+  .tablePeriodicWrap {
+    overflow: scroll;
+  }
+
+  .tablePeriodic {
+    width: 600px;
+  }
+}
+
+
+/* 
+.tablePeriodic > li {
+  position: relative;
+}
+
+.linkarea {
+  position: absolute;
+  bottom: .5em;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100%;
+} */

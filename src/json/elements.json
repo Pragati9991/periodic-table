@@ -1,0 +1,35 @@
+{
+    "Hydrogen": {
+      "name": "Hydrogen",
+      "symbol": "H",
+      "atomicNumber": 1,
+      "electronsPerShell": [1],
+      "protons": 1,
+      "neutrons": 0
+    },
+    "Helium": {
+      "name": "Helium",
+      "symbol": "He",
+      "atomicNumber": 2,
+      "electronsPerShell": [2],
+      "protons": 2,
+      "neutrons": 2
+    },
+    "Lithium": {
+      "name": "Lithium",
+      "symbol": "Li",
+      "atomicNumber": 3,
+      "electronsPerShell": [2, 1],
+      "protons": 3,
+      "neutrons": 4
+    },
+    "Pragatium": {
+        "name": "Pragatium",
+        "symbol": "Pr",
+        "atomicNumber": 53,
+        "electronsPerShell": [15, 1, 8],
+        "protons": 12,
+        "neutrons": 8
+      }
+  }
+  

@@ -1,0 +1,10 @@
+/* Header
+============================== */
+.footer {
+    background-color: var(--color-fotter);
+    padding: 40px;
+}
+
+.footer__copy {
+  
+}
