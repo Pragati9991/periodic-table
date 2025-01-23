@@ -107,6 +107,38 @@ ol li::after {
   font-size: 0.33em;
 }
 
+/**/
+ol li {
+  position: relative;
+  overflow: hidden;
+}
+ol li a {
+  display: grid;
+  font-weight: 500;
+  grid-area: 2 / 1 / 4 / 3;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  /* padding: 0.25ch; */
+}
+ol li a::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% + 0.5ch);
+  height: 175%;
+  bottom: -0.25ch;
+  left: -0.25ch;
+}
+ol abbr {
+  gap: 10px 0;
+}
+/**/
+
 @media (hover: hover) {
   ol li:hover {
     cursor: pointer;
