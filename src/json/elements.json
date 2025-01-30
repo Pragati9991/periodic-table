@@ -1,35 +1,1022 @@
 {
-    "Hydrogen": {
-      "name": "Hydrogen",
-      "symbol": "H",
-      "atomicNumber": 1,
-      "electronsPerShell": [1],
-      "protons": 1,
-      "neutrons": 0
-    },
-    "Helium": {
-      "name": "Helium",
-      "symbol": "He",
-      "atomicNumber": 2,
-      "electronsPerShell": [2],
-      "protons": 2,
-      "neutrons": 2
-    },
-    "Lithium": {
-      "name": "Lithium",
-      "symbol": "Li",
-      "atomicNumber": 3,
-      "electronsPerShell": [2, 1],
-      "protons": 3,
-      "neutrons": 4
-    },
-    "Pragatium": {
-        "name": "Pragatium",
-        "symbol": "Pr",
-        "atomicNumber": 53,
-        "electronsPerShell": [15, 1, 8],
-        "protons": 12,
-        "neutrons": 8
-      }
+  "H": {
+    "nucleusParticleCount": 1,
+    "orbits": [
+      { "radius": 1, "particles": 1 }
+    ]
+  },
+  "He": {
+    "nucleusParticleCount": 2,
+    "orbits": [
+      { "radius": 1, "particles": 2 }
+    ]
+  },
+  "Li": {
+    "nucleusParticleCount": 3,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 1 }
+    ]
+  },
+  "Be": {
+    "nucleusParticleCount": 4,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 2 }
+    ]
+  },
+  "B": {
+    "nucleusParticleCount": 5,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 3 }
+    ]
+  },
+  "C": {
+    "nucleusParticleCount": 6,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 4 }
+    ]
+  },
+  "N": {
+    "nucleusParticleCount": 7,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 5 }
+    ]
+  },
+  "O": {
+    "nucleusParticleCount": 8,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 6 }
+    ]
+  },
+  "F": {
+    "nucleusParticleCount": 9,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 7 }
+    ]
+  },
+  "Ne": {
+    "nucleusParticleCount": 10,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 }
+    ]
+  },
+  "Na": {
+    "nucleusParticleCount": 11,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 1 }
+    ]
+  },
+  "Mg": {
+    "nucleusParticleCount": 12,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 2 }
+    ]
+  },
+  "Al": {
+    "nucleusParticleCount": 13,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 3 }
+    ]
+  },
+  "Si": {
+    "nucleusParticleCount": 14,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 4 }
+    ]
+  },
+  "P": {
+    "nucleusParticleCount": 15,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 5 }
+    ]
+  },
+  "S": {
+    "nucleusParticleCount": 16,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 6 }
+    ]
+  },
+  "Cl": {
+    "nucleusParticleCount": 17,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 7 }
+    ]
+  },
+  "Ar": {
+    "nucleusParticleCount": 18,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 8 }
+    ]
+  },
+  "K": {
+    "nucleusParticleCount": 19,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 8 },
+      { "radius": 4, "particles": 1 }
+    ]
+  },
+  "Ca": {
+    "nucleusParticleCount": 20,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 8 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Sc": {
+    "nucleusParticleCount": 21,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 9 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Ti": {
+    "nucleusParticleCount": 22,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 10 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "V": {
+    "nucleusParticleCount": 23,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 11 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Cr": {
+    "nucleusParticleCount": 24,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 13 },
+      { "radius": 4, "particles": 1 }
+    ]
+  },
+  "Mn": {
+    "nucleusParticleCount": 25,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 13 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Fe": {
+    "nucleusParticleCount": 26,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 14 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Co": {
+    "nucleusParticleCount": 27,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 15 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Ni": {
+    "nucleusParticleCount": 28,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 16 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Cu": {
+    "nucleusParticleCount": 29,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 1 }
+    ]
+  },
+  "Zn": {
+    "nucleusParticleCount": 30,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 2 }
+    ]
+  },
+  "Ga": {
+    "nucleusParticleCount": 31,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 3 }
+    ]
+  },
+  "Ge": {
+    "nucleusParticleCount": 32,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 4 }
+    ]
+  },
+  "As": {
+    "nucleusParticleCount": 33,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 5 }
+    ]
+  },
+  "Se": {
+    "nucleusParticleCount": 34,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 6 }
+    ]
+  },
+  "Br": {
+    "nucleusParticleCount": 35,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 7 }
+    ]
+  },
+  "Kr": {
+    "nucleusParticleCount": 36,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 8 }
+    ]
+  },
+  "Rb": {
+    "nucleusParticleCount": 37,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 8 },
+      { "radius": 5, "particles": 1 }
+    ]
+  },
+  "Sr": {
+    "nucleusParticleCount": 38,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 8 },
+      { "radius": 5, "particles": 2 }
+    ]
+  },
+  "Y": {
+    "nucleusParticleCount": 39,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 9 },
+      { "radius": 5, "particles": 2 }
+    ]
+  },
+  "Zr": {
+    "nucleusParticleCount": 40,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 10 },
+      { "radius": 5, "particles": 2 }
+    ]
+  },
+  "Nb": {
+    "nucleusParticleCount": 41,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 12 },
+      { "radius": 5, "particles": 1 }
+    ]
+  },
+  "Mo": {
+    "nucleusParticleCount": 42,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 13 },
+      { "radius": 5, "particles": 1 }
+    ]
+  },
+  "Tc": {
+    "nucleusParticleCount": 43,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 13 },
+      { "radius": 5, "particles": 2 }
+    ]
+  },
+  "Ru": {
+    "nucleusParticleCount": 44,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 15 },
+      { "radius": 5, "particles": 1 }
+    ]
+  },
+  "Rh": {
+    "nucleusParticleCount": 45,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 16 },
+      { "radius": 5, "particles": 1 }
+    ]
+  },
+  "Pd": {
+    "nucleusParticleCount": 46,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 }
+    ]
+  },
+  "Ag": {
+    "nucleusParticleCount": 47,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 1 }
+    ]
+  },
+  "Cd": {
+    "nucleusParticleCount": 48,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 2 }
+    ]
+  },
+  "In": {
+    "nucleusParticleCount": 49,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 3 }
+    ]
+  },
+  "Sn": {
+    "nucleusParticleCount": 50,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 4 }
+    ]
+  },
+  "Sb": {
+    "nucleusParticleCount": 51,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 5 }
+    ]
+  },
+  "Te": {
+    "nucleusParticleCount": 52,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 6 }
+    ]
+  },
+  "I": {
+    "nucleusParticleCount": 53,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 7 }
+    ]
+  },
+  "Xe": {
+    "nucleusParticleCount": 54,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 8 }
+    ]
+  },
+  "Cs": {
+    "nucleusParticleCount": 55,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 1 }
+    ]
+  },
+  "Ba": {
+    "nucleusParticleCount": 56,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "La": {
+    "nucleusParticleCount": 57,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 18 },
+      { "radius": 5, "particles": 9 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Ce": {
+    "nucleusParticleCount": 58,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 19 },
+      { "radius": 5, "particles": 9 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Pr": {
+    "nucleusParticleCount": 59,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 20 },
+      { "radius": 5, "particles": 9 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Nd": {
+    "nucleusParticleCount": 60,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 22 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Pm": {
+    "nucleusParticleCount": 61,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 23 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Sm": {
+    "nucleusParticleCount": 62,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 24 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Eu": {
+    "nucleusParticleCount": 63,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 25 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Gd": {
+    "nucleusParticleCount": 64,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 25 },
+      { "radius": 5, "particles": 9 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Tb": {
+    "nucleusParticleCount": 65,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 27 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Dy": {
+    "nucleusParticleCount": 66,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 28 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Ho": {
+    "nucleusParticleCount": 67,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 29 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Er": {
+    "nucleusParticleCount": 68,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 30 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Tm": {
+    "nucleusParticleCount": 69,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 31 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Yb": {
+    "nucleusParticleCount": 70,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 8 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Lu": {
+    "nucleusParticleCount": 71,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 9 },
+      { "radius": 6, "particles": 2 }
+    ]
+  },
+  "Ac": {
+    "nucleusParticleCount": 89,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 9 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Th": {
+    "nucleusParticleCount": 90,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 10 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Pa": {
+    "nucleusParticleCount": 91,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 11 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "U": {
+    "nucleusParticleCount": 92,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 12 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Np": {
+    "nucleusParticleCount": 93,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 13 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Pu": {
+    "nucleusParticleCount": 94,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 14 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Am": {
+    "nucleusParticleCount": 95,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 15 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Cm": {
+    "nucleusParticleCount": 96,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 16 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Bk": {
+    "nucleusParticleCount": 97,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 17 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Cf": {
+    "nucleusParticleCount": 98,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 18 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Es": {
+    "nucleusParticleCount": 99,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 19 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Fm": {
+    "nucleusParticleCount": 100,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 20 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Md": {
+    "nucleusParticleCount": 101,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 21 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "No": {
+    "nucleusParticleCount": 102,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 22 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Lr": {
+    "nucleusParticleCount": 103,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 23 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Rf": {
+    "nucleusParticleCount": 104,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 2 }
+    ]
+  },
+  "Db": {
+    "nucleusParticleCount": 105,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 3 }
+    ]
+  },
+  "Sg": {
+    "nucleusParticleCount": 106,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 4 }
+    ]
+  },
+  "Bh": {
+    "nucleusParticleCount": 107,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 5 }
+    ]
+  },
+  "Hs": {
+    "nucleusParticleCount": 108,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 6 }
+    ]
+  },
+  "Mt": {
+    "nucleusParticleCount": 109,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 7 }
+    ]
+  },
+  "Ds": {
+    "nucleusParticleCount": 110,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 8 }
+    ]
+  },
+  "Rg": {
+    "nucleusParticleCount": 111,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 9 }
+    ]
+  },
+  "Cn": {
+    "nucleusParticleCount": 112,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 10 }
+    ]
+  },
+  "Nh": {
+    "nucleusParticleCount": 113,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 11 }
+    ]
+  },
+  "Fl": {
+    "nucleusParticleCount": 114,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 12 }
+    ]
+  },
+  "Mc": {
+    "nucleusParticleCount": 115,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 13 }
+    ]
+  },
+  "Lv": {
+    "nucleusParticleCount": 116,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 14 }
+    ]
+  },
+  "Ts": {
+    "nucleusParticleCount": 117,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 15 }
+    ]
+  },
+  "Og": {
+    "nucleusParticleCount": 118,
+    "orbits": [
+      { "radius": 1, "particles": 2 },
+      { "radius": 2, "particles": 8 },
+      { "radius": 3, "particles": 18 },
+      { "radius": 4, "particles": 32 },
+      { "radius": 5, "particles": 18 },
+      { "radius": 6, "particles": 32 },
+      { "radius": 7, "particles": 16 }
+    ]
   }
-  
+}

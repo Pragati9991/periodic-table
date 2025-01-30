@@ -82,6 +82,7 @@ ol li.blackSpace {
   padding: 0;
   overflow: visible;
   position: relative;
+  pointer-events: none;
 }
 
 ol li.blackSpace::before {
