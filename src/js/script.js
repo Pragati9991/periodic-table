@@ -71,17 +71,24 @@ async function init(element) {
   });
 
   // カメラ位置
-  camera.position.z = 10;
+  camera.position.z = 7;
 }
 
 // アニメーションループ
 function animate() {
   requestAnimationFrame(animate);
 
-  // 全ての軌道を回転
-  orbitGroups.forEach((orbit) => {
-    orbit.group.rotation.z += orbit.speed; // 軌道を回転
-  });
+  // 軌道1の回転（例: 時計回り）
+  if (orbitGroups[0]) {
+    orbitGroups[0].group.rotation.z += 0.01; // Z軸の回転
+    orbitGroups[0].group.rotation.x += 0.005; // X軸の回転
+  }
+
+  // 軌道2の回転（例: 反時計回り）
+  if (orbitGroups[1]) {
+    orbitGroups[1].group.rotation.z -= 0.008; // Z軸の逆回転
+    orbitGroups[1].group.rotation.y += 0.004; // Y軸の回転
+  }
 
   renderer.render(scene, camera);
 }
