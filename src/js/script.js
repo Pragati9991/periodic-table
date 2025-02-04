@@ -1,20 +1,20 @@
 import * as THREE from 'three';
 
-// JSON データの読み込み
+// Loading JSON Data
 async function fetchElementData(element) {
   try {
-    const response = await fetch('/src/json/elements.json'); // JSON ファイルへの相対パス
+    const response = await fetch('/src/json/elements.json');
     if (!response.ok) {
       throw new Error(`Failed to fetch JSON: ${response.status}`);
     }
     const data = await response.json();
-    return data[element]; // 指定された要素のデータを返す
+    return data[element];
   } catch (error) {
     console.error("Error loading element data:", error);
   }
 }
 
-// Three.js のシーン設定
+// Three.js scene setup
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -22,10 +22,10 @@ const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize(800, 600);
 document.getElementById("canvaBox").appendChild(renderer.domElement);
 
-// 全ての軌道グループを保存
+// Save all orbital groups
 const orbitGroups = [];
 
-// 初期化関数
+// Initialization Function
 async function init(element) {
   const elementData = await fetchElementData(element);
   if (!elementData) {
@@ -33,16 +33,16 @@ async function init(element) {
     return;
   }
 
-  // 原子核の作成（1つだけ固定）
+  // Creation of atomic nuclei (only one fixed)
   const nucleusMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
   const nucleus = new THREE.Mesh(new THREE.SphereGeometry(0.3, 32, 32), nucleusMaterial);
-  scene.add(nucleus); // 原子核をシーンの中心に配置
+  scene.add(nucleus);
 
-  // 電子軌道の作成
+  // Creating electron orbitals
   elementData.orbits.forEach((orbit, index) => {
     const orbitGroup = new THREE.Group();
 
-    // 軌道描画
+    // Trajectory drawing
     const curve = new THREE.EllipseCurve(0, 0, orbit.radius, orbit.radius, 0, 2 * Math.PI, false);
     const points = curve.getPoints(100);
     const geometry = new THREE.BufferGeometry().setFromPoints(points);
@@ -51,7 +51,7 @@ async function init(element) {
 
     orbitGroup.add(ellipse);
 
-    // 電子配置
+    // Electron configuration
     for (let i = 0; i < orbit.particles; i++) {
       const angle = (i / orbit.particles) * Math.PI * 2;
       const x = Math.cos(angle) * orbit.radius;
@@ -65,44 +65,45 @@ async function init(element) {
       orbitGroup.add(electron);
     }
 
-    // 軌道グループをシーンに追加
+    // Adding a Trajectory Group to a Scene
     scene.add(orbitGroup);
-    orbitGroups.push({ group: orbitGroup, speed: 0.01 + 0.005 * index }); // 回転速度を保存
+    orbitGroups.push({ group: orbitGroup, speed: 0.01 + 0.005 * index });
   });
 
-  // カメラ位置
-  camera.position.z = 7;
+  // Adjusting the camera position and viewing angle
+  const maxRadius = Math.max(...elementData.orbits.map(orbit => orbit.radius));
+  camera.position.z = maxRadius * 2;
+  camera.fov = Math.atan((maxRadius + 2) / camera.position.z) * (180 / Math.PI) * 2;
+  camera.updateProjectionMatrix();
 }
 
-// アニメーションループ
+// Animation Loop
 function animate() {
   requestAnimationFrame(animate);
 
-  // 軌道1の回転（例: 時計回り）
-  if (orbitGroups[0]) {
-    orbitGroups[0].group.rotation.z += 0.01; // Z軸の回転
-    orbitGroups[0].group.rotation.x += 0.005; // X軸の回転
-  }
+  // Rotate all orbits
+  orbitGroups.forEach((orbit, index) => {
+    if (orbit.group) {
+      const direction = index % 2 === 0 ? 1 : -1; // Even orbitals rotate clockwise, odd orbitals rotate counterclockwise
 
-  // 軌道2の回転（例: 反時計回り）
-  if (orbitGroups[1]) {
-    orbitGroups[1].group.rotation.z -= 0.008; // Z軸の逆回転
-    orbitGroups[1].group.rotation.y += 0.004; // Y軸の回転
-  }
+      // Electron Speed
+      orbit.group.rotation.z += direction * orbit.speed * 0.5; // Z-axis rotation speed
+      orbit.group.rotation.x += 0.0025 * direction * Math.cos(Date.now() * 0.00005 + index); // X-axis rotation speed
+      orbit.group.rotation.y += 0.001 * direction * Math.sin(Date.now() * 0.00005 + index); // Y-axis rotation speed
+    }
+  });
 
   renderer.render(scene, camera);
 }
 
-// URL から要素を取得
+// Get an element from a URL
 const urlParams = new URLSearchParams(window.location.search);
-const element = urlParams.get('element') || 'H'; // デフォルトは 'H'
+const element = urlParams.get('element') || 'H';
 
-// 初期化とアニメーション開始
+// Initialization and animation start
 init(element).then(() => {
-  animate(); // アニメーションを開始
+  animate();
 });
-
-
 
 
 
@@ -210,3 +211,115 @@ init(element).then(() => {
 // }
 
 // animate();
+
+
+//* VER2 (Before animation completed)
+//============================================ */
+// import * as THREE from 'three';
+
+// // JSON データの読み込み
+// async function fetchElementData(element) {
+//   try {
+//     const response = await fetch('/src/json/elements.json'); // JSON ファイルへの相対パス
+//     if (!response.ok) {
+//       throw new Error(`Failed to fetch JSON: ${response.status}`);
+//     }
+//     const data = await response.json();
+//     return data[element]; // 指定された要素のデータを返す
+//   } catch (error) {
+//     console.error("Error loading element data:", error);
+//   }
+// }
+
+// // Three.js のシーン設定
+// const scene = new THREE.Scene();
+// const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+// const renderer = new THREE.WebGLRenderer({ antialias: true });
+
+// // renderer.setSize(700, 500);
+// renderer.setSize(800, 600);
+// document.getElementById("canvaBox").appendChild(renderer.domElement);
+
+// // 全ての軌道グループを保存
+// const orbitGroups = [];
+
+// // 初期化関数
+// async function init(element) {
+//   const elementData = await fetchElementData(element);
+//   if (!elementData) {
+//     console.error("Element data not found!");
+//     return;
+//   }
+
+//   // 原子核の作成（1つだけ固定）
+//   const nucleusMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+//   const nucleus = new THREE.Mesh(new THREE.SphereGeometry(0.3, 32, 32), nucleusMaterial);
+//   scene.add(nucleus); // 原子核をシーンの中心に配置
+
+//   // 電子軌道の作成
+//   elementData.orbits.forEach((orbit, index) => {
+//     const orbitGroup = new THREE.Group();
+
+//     // 軌道描画
+//     const curve = new THREE.EllipseCurve(0, 0, orbit.radius, orbit.radius, 0, 2 * Math.PI, false);
+//     const points = curve.getPoints(100);
+//     const geometry = new THREE.BufferGeometry().setFromPoints(points);
+//     const material = new THREE.LineBasicMaterial({ color: 0x00ff00 });
+//     const ellipse = new THREE.Line(geometry, material);
+
+//     orbitGroup.add(ellipse);
+
+//     // 電子配置
+//     for (let i = 0; i < orbit.particles; i++) {
+//       const angle = (i / orbit.particles) * Math.PI * 2;
+//       const x = Math.cos(angle) * orbit.radius;
+//       const y = Math.sin(angle) * orbit.radius;
+
+//       const electron = new THREE.Mesh(
+//         new THREE.SphereGeometry(0.1, 32, 32),
+//         new THREE.MeshBasicMaterial({ color: 0x0000ff })
+//       );
+//       electron.position.set(x, y, 0);
+//       orbitGroup.add(electron);
+//     }
+
+//     // 軌道グループをシーンに追加
+//     scene.add(orbitGroup);
+//     orbitGroups.push({ group: orbitGroup, speed: 0.01 + 0.005 * index }); // 回転速度を保存
+//   });
+
+//   // カメラ位置と視野角の調整
+//   const maxRadius = Math.max(...elementData.orbits.map(orbit => orbit.radius)); // 軌道の最大半径
+//   camera.position.z = maxRadius * 2; // カメラを最大半径に応じて遠ざける
+//   camera.fov = Math.atan((maxRadius + 2) / camera.position.z) * (180 / Math.PI) * 2; // 視野角を調整
+//   camera.updateProjectionMatrix(); // 投影行列を更新
+// }
+
+
+// // アニメーションループ
+// function animate() {
+//   requestAnimationFrame(animate);
+
+//   // 軌道1の回転（例: 時計回り）
+//   if (orbitGroups[0]) {
+//     orbitGroups[0].group.rotation.z += 0.01; // Z軸の回転
+//     orbitGroups[0].group.rotation.x += 0.005; // X軸の回転
+//   }
+
+//   // 軌道2の回転（例: 反時計回り）
+//   if (orbitGroups[1]) {
+//     orbitGroups[1].group.rotation.z -= 0.008; // Z軸の逆回転
+//     orbitGroups[1].group.rotation.y += 0.004; // Y軸の回転
+//   }
+
+//   renderer.render(scene, camera);
+// }
+
+// // URL から要素を取得
+// const urlParams = new URLSearchParams(window.location.search);
+// const element = urlParams.get('element') || 'H'; // デフォルトは 'H'
+
+// // 初期化とアニメーション開始
+// init(element).then(() => {
+//   animate(); // アニメーションを開始
+// });
