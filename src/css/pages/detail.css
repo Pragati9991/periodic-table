@@ -10,3 +10,10 @@ canvas {
   width: 800px;
   height: 800px;
 }
+
+.blockInfo {
+  background-color: #fff;
+  position: absolute;
+  top: 100px;
+  left: 100px;
+}
