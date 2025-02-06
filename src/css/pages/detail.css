@@ -16,8 +16,8 @@ canvas {
   color: #fff;
   background-color: rgba(82,91,98, .2);
   position: absolute;
-  top: 100px;
-  left: 100px;
+  top: 127px;
+  left: 95px;
   z-index: 1;
   padding: 24px;
   border-radius: 20px;
@@ -29,6 +29,20 @@ canvas {
 }
 
 .blockInfo > * {
+  line-height: 1;
+}
 
+.blockInfo > *.num {
+  font-size: 28px;
 
+}
+
+.blockInfo > *.element {
+  color: #6AEBAA;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.blockInfo > *.name {
+  font-size: 24px;
 }
