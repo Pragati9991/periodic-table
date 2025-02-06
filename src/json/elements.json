@@ -3,69 +3,119 @@
     "nucleusParticleCount": 1,
     "orbits": [
       { "radius": 1, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "1",
+      "element": "H",
+      "name": "Hydrogen"
+    }
   },
   "He": {
     "nucleusParticleCount": 2,
     "orbits": [
       { "radius": 1, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "2",
+      "element": "He",
+      "name": "Helium"
+    }
   },
   "Li": {
     "nucleusParticleCount": 3,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "3",
+      "element": "Li",
+      "name": "Lithium"
+    }
   },
   "Be": {
     "nucleusParticleCount": 4,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "4",
+      "element": "Be",
+      "name": "Beryllium"
+    }
   },
   "B": {
     "nucleusParticleCount": 5,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 3 }
-    ]
+    ],
+    "info": {
+      "num": "5",
+      "element": "B",
+      "name": "Boron"
+    }
   },
   "C": {
     "nucleusParticleCount": 6,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 4 }
-    ]
+    ],
+    "info": {
+      "num": "6",
+      "element": "C",
+      "name": "Carbon"
+    }
   },
   "N": {
     "nucleusParticleCount": 7,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 5 }
-    ]
+    ],
+    "info": {
+      "num": "7",
+      "element": "N",
+      "name": "Nitrogen"
+    }
   },
   "O": {
     "nucleusParticleCount": 8,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 6 }
-    ]
+    ],
+    "info": {
+      "num": "8",
+      "element": "O",
+      "name": "Oxygen"
+    }
   },
   "F": {
     "nucleusParticleCount": 9,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 7 }
-    ]
+    ],
+    "info": {
+      "num": "9",
+      "element": "F",
+      "name": "Fluorine"
+    }
   },
   "Ne": {
     "nucleusParticleCount": 10,
     "orbits": [
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 }
-    ]
+    ],
+    "info": {
+      "num": "10",
+      "element": "Ne",
+      "name": "Neon"
+    }
   },
   "Na": {
     "nucleusParticleCount": 11,
@@ -73,7 +123,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "11",
+      "element": "Na",
+      "name": "Sodium"
+    }
   },
   "Mg": {
     "nucleusParticleCount": 12,
@@ -81,7 +136,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "12",
+      "element": "Mg",
+      "name": "Magnesium"
+    }
   },
   "Al": {
     "nucleusParticleCount": 13,
@@ -89,7 +149,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 3 }
-    ]
+    ],
+    "info": {
+      "num": "13",
+      "element": "Al",
+      "name": "Aluminum"
+    }
   },
   "Si": {
     "nucleusParticleCount": 14,
@@ -97,7 +162,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 4 }
-    ]
+    ],
+    "info": {
+      "num": "14",
+      "element": "Si",
+      "name": "Silicon"
+    }
   },
   "P": {
     "nucleusParticleCount": 15,
@@ -105,7 +175,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 5 }
-    ]
+    ],
+    "info": {
+      "num": "15",
+      "element": "P",
+      "name": "Phosphorus"
+    }
   },
   "S": {
     "nucleusParticleCount": 16,
@@ -113,7 +188,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 6 }
-    ]
+    ],
+    "info": {
+      "num": "16",
+      "element": "S",
+      "name": "Sulfur"
+    }
   },
   "Cl": {
     "nucleusParticleCount": 17,
@@ -121,7 +201,12 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 7 }
-    ]
+    ],
+    "info": {
+      "num": "17",
+      "element": "Cl",
+      "name": "Chlorine"
+    }
   },
   "Ar": {
     "nucleusParticleCount": 18,
@@ -129,8 +214,13 @@
       { "radius": 1, "particles": 2 },
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 8 }
-    ]
-  },
+    ],
+    "info": {
+      "num": "18",
+      "element": "Ar",
+      "name": "Argon"
+    }
+  }, 
   "K": {
     "nucleusParticleCount": 19,
     "orbits": [
@@ -138,7 +228,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 8 },
       { "radius": 4, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "19",
+      "element": "K",
+      "name": "Potassium"
+    }
   },
   "Ca": {
     "nucleusParticleCount": 20,
@@ -147,7 +242,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 8 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "20",
+      "element": "Ca",
+      "name": "Calcium"
+    }
   },
   "Sc": {
     "nucleusParticleCount": 21,
@@ -156,7 +256,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 9 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "21",
+      "element": "Sc",
+      "name": "Scandium"
+    }
   },
   "Ti": {
     "nucleusParticleCount": 22,
@@ -165,7 +270,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 10 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "22",
+      "element": "Ti",
+      "name": "Titanium"
+    }
   },
   "V": {
     "nucleusParticleCount": 23,
@@ -174,7 +284,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 11 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "23",
+      "element": "V",
+      "name": "Vanadium"
+    }
   },
   "Cr": {
     "nucleusParticleCount": 24,
@@ -183,7 +298,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 13 },
       { "radius": 4, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "24",
+      "element": "Cr",
+      "name": "Chromium"
+    }
   },
   "Mn": {
     "nucleusParticleCount": 25,
@@ -192,7 +312,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 13 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "25",
+      "element": "Mn",
+      "name": "Manganese"
+    }
   },
   "Fe": {
     "nucleusParticleCount": 26,
@@ -201,7 +326,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 14 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "26",
+      "element": "Fe",
+      "name": "Iron"
+    }
   },
   "Co": {
     "nucleusParticleCount": 27,
@@ -210,7 +340,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 15 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "27",
+      "element": "Co",
+      "name": "Cobalt"
+    }
   },
   "Ni": {
     "nucleusParticleCount": 28,
@@ -219,7 +354,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 16 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "28",
+      "element": "Ni",
+      "name": "Nickel"
+    }
   },
   "Cu": {
     "nucleusParticleCount": 29,
@@ -228,7 +368,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "29",
+      "element": "Cu",
+      "name": "Copper"
+    }
   },
   "Zn": {
     "nucleusParticleCount": 30,
@@ -237,7 +382,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "30",
+      "element": "Zn",
+      "name": "Zinc"
+    }
   },
   "Ga": {
     "nucleusParticleCount": 31,
@@ -246,7 +396,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 3 }
-    ]
+    ],
+    "info": {
+      "num": "31",
+      "element": "Ga",
+      "name": "Gallium"
+    }
   },
   "Ge": {
     "nucleusParticleCount": 32,
@@ -255,7 +410,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 4 }
-    ]
+    ],
+    "info": {
+      "num": "32",
+      "element": "Ge",
+      "name": "Germanium"
+    }
   },
   "As": {
     "nucleusParticleCount": 33,
@@ -264,7 +424,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 5 }
-    ]
+    ],
+    "info": {
+      "num": "33",
+      "element": "As",
+      "name": "Arsenic"
+    }
   },
   "Se": {
     "nucleusParticleCount": 34,
@@ -273,7 +438,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 6 }
-    ]
+    ],
+    "info": {
+      "num": "34",
+      "element": "Se",
+      "name": "Selenium"
+    }
   },
   "Br": {
     "nucleusParticleCount": 35,
@@ -282,7 +452,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 7 }
-    ]
+    ],
+    "info": {
+      "num": "35",
+      "element": "Br",
+      "name": "Bromine"
+    }
   },
   "Kr": {
     "nucleusParticleCount": 36,
@@ -291,7 +466,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 8 }
-    ]
+    ],
+    "info": {
+      "num": "36",
+      "element": "Kr",
+      "name": "Krypton"
+    }
   },
   "Rb": {
     "nucleusParticleCount": 37,
@@ -301,7 +481,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 8 },
       { "radius": 5, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "37",
+      "element": "Rb",
+      "name": "Rubidium"
+    }
   },
   "Sr": {
     "nucleusParticleCount": 38,
@@ -311,7 +496,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 8 },
       { "radius": 5, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "38",
+      "element": "Sr",
+      "name": "Strontium"
+    }
   },
   "Y": {
     "nucleusParticleCount": 39,
@@ -321,7 +511,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 9 },
       { "radius": 5, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "39",
+      "element": "Y",
+      "name": "Yttrium"
+    }
   },
   "Zr": {
     "nucleusParticleCount": 40,
@@ -331,7 +526,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 10 },
       { "radius": 5, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "40",
+      "element": "Zr",
+      "name": "Zirconium"
+    }
   },
   "Nb": {
     "nucleusParticleCount": 41,
@@ -341,8 +541,13 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 12 },
       { "radius": 5, "particles": 1 }
-    ]
-  },
+    ],
+    "info": {
+      "num": "41",
+      "element": "Nb",
+      "name": "Niobium"
+    }
+  },  
   "Mo": {
     "nucleusParticleCount": 42,
     "orbits": [
@@ -351,7 +556,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 13 },
       { "radius": 5, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "42",
+      "element": "Mo",
+      "name": "Molybdenum"
+    }
   },
   "Tc": {
     "nucleusParticleCount": 43,
@@ -361,7 +571,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 13 },
       { "radius": 5, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "43",
+      "element": "Tc",
+      "name": "Technetium"
+    }
   },
   "Ru": {
     "nucleusParticleCount": 44,
@@ -371,7 +586,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 15 },
       { "radius": 5, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "44",
+      "element": "Ru",
+      "name": "Ruthenium"
+    }
   },
   "Rh": {
     "nucleusParticleCount": 45,
@@ -381,7 +601,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 16 },
       { "radius": 5, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "45",
+      "element": "Rh",
+      "name": "Rhodium"
+    }
   },
   "Pd": {
     "nucleusParticleCount": 46,
@@ -390,7 +615,12 @@
       { "radius": 2, "particles": 8 },
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 }
-    ]
+    ],
+    "info": {
+      "num": "46",
+      "element": "Pd",
+      "name": "Palladium"
+    }
   },
   "Ag": {
     "nucleusParticleCount": 47,
@@ -400,7 +630,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 1 }
-    ]
+    ],
+    "info": {
+      "num": "47",
+      "element": "Ag",
+      "name": "Silver"
+    }
   },
   "Cd": {
     "nucleusParticleCount": 48,
@@ -410,7 +645,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 2 }
-    ]
+    ],
+    "info": {
+      "num": "48",
+      "element": "Cd",
+      "name": "Cadmium"
+    }
   },
   "In": {
     "nucleusParticleCount": 49,
@@ -420,7 +660,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 3 }
-    ]
+    ],
+    "info": {
+      "num": "49",
+      "element": "In",
+      "name": "Indium"
+    }
   },
   "Sn": {
     "nucleusParticleCount": 50,
@@ -430,7 +675,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 4 }
-    ]
+    ],
+    "info": {
+      "num": "50",
+      "element": "Sn",
+      "name": "Tin"
+    }
   },
   "Sb": {
     "nucleusParticleCount": 51,
@@ -440,7 +690,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 5 }
-    ]
+    ],
+    "info": {
+      "num": "51",
+      "element": "Sb",
+      "name": "Antimony"
+    }
   },
   "Te": {
     "nucleusParticleCount": 52,
@@ -450,7 +705,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 6 }
-    ]
+    ],
+    "info": {
+      "num": "52",
+      "element": "Te",
+      "name": "Tellurium"
+    }
   },
   "I": {
     "nucleusParticleCount": 53,
@@ -460,7 +720,12 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 7 }
-    ]
+    ],
+    "info": {
+      "num": "53",
+      "element": "I",
+      "name": "Iodine"
+    }
   },
   "Xe": {
     "nucleusParticleCount": 54,
@@ -470,8 +735,13 @@
       { "radius": 3, "particles": 18 },
       { "radius": 4, "particles": 18 },
       { "radius": 5, "particles": 8 }
-    ]
-  },
+    ],
+    "info": {
+      "num": "54",
+      "element": "Xe",
+      "name": "Xenon"
+    }
+  },  
   "Cs": {
     "nucleusParticleCount": 55,
     "orbits": [
