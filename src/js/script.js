@@ -169,3 +169,37 @@ const element = urlParams.get('element') || 'H';
 init(element).then(() => {
   animate();
 });
+
+
+
+
+
+
+// 7) Display element information dynamically
+async function displayElementInfo() {
+  try {
+    // Fetch the JSON data for all elements
+    const response = await fetch('/src/json/elements.json'); // JSONファイルのパスを指定
+    if (!response.ok) {
+      throw new Error(`Failed to fetch JSON: ${response.status}`);
+    }
+    const data = await response.json();
+
+    // Get the selected element's data
+    const elementData = data[element];
+    if (!elementData) {
+      console.error("Element not found in JSON");
+      return;
+    }
+
+    // Display the info in the HTML
+    document.querySelector('.num').textContent = elementData.info.num;
+    document.querySelector('.element').textContent = elementData.info.element;
+    document.querySelector('.name').textContent = elementData.info.name;
+  } catch (error) {
+    console.error("Error displaying element info:", error);
+  }
+}
+
+// Call the display function
+displayElementInfo();

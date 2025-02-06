@@ -1194,7 +1194,12 @@
       { "radius": 5, "particles": 18 },
       { "radius": 6, "particles": 32 },
       { "radius": 7, "particles": 15 }
-    ]
+    ],
+    "info": {
+      "num": "118",
+      "element": "Ts",
+      "name": ""
+    }
   },
   "Og": {
     "nucleusParticleCount": 118,
@@ -1206,6 +1211,11 @@
       { "radius": 5, "particles": 18 },
       { "radius": 6, "particles": 32 },
       { "radius": 7, "particles": 16 }
-    ]
+    ],
+    "info": {
+      "num": "118",
+      "element": "Og",
+      "name": "Oganesson"
+    }
   }
 }
