@@ -3,7 +3,7 @@ import * as THREE from 'three';
 // 1) Fetch JSON data
 async function fetchElementData(element) {
   try {
-    const response = await fetch('/src/json/elements.json');
+    const response = await fetch('src/json/elements.json');
     if (!response.ok) {
       throw new Error(`Failed to fetch JSON: ${response.status}`);
     }
@@ -41,7 +41,7 @@ async function init(element) {
 
   // Create nucleus (center sphere)
   const textureLoader = new THREE.TextureLoader();
-  const nucleusTexture = textureLoader.load('/src/img/matcap2.png');
+  const nucleusTexture = textureLoader.load('src/img/matcap2.png');
   const nucleusMaterial = new THREE.MeshMatcapMaterial({ matcap: nucleusTexture });
 
   const nucleus = new THREE.Mesh(
@@ -93,7 +93,7 @@ async function init(element) {
     orbitGroup.add(ellipse);
 
     // ---- (B) Electrons on this orbit ----
-    const electronTexture = textureLoader.load('/src/img/matcap3.png');
+    const electronTexture = textureLoader.load('src/img/matcap3.png');
     const electronMaterial = new THREE.MeshMatcapMaterial({ matcap: electronTexture });
 
     for (let i = 0; i < orbit.particles; i++) {
@@ -170,16 +170,11 @@ init(element).then(() => {
   animate();
 });
 
-
-
-
-
-
 // 7) Display element information dynamically
 async function displayElementInfo() {
   try {
     // Fetch the JSON data for all elements
-    const response = await fetch('/src/json/elements.json'); // JSONファイルのパスを指定
+    const response = await fetch('src/json/elements.json'); // JSONファイルのパスを指定
     if (!response.ok) {
       throw new Error(`Failed to fetch JSON: ${response.status}`);
     }
